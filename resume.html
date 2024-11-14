@@ -1,126 +1,216 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head>     
-    <meta charset="UTF-8">     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-    <title>Resume</title>     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
-</head> 
-<body>     
-    <div class="container">         
-        <!-- Header Section with Profile Photo -->         
-        <div class="header">             
-            <img src="Nikhil-Photo.jpg" alt="Nikhil's Photo" class="profile-photo">             
-            <h1>Nikhil T Nainan</h1>             
-            <p>Villa No. 2, Carbon Park Lane Villa, Sy.No. 64, KRC Road, Off Doddagubi Main Road, Kyalasanahalli, Bangalore - 560 077</p>             
-            <p>9620265432 | Email: nikhilnainan16@gmail.com | LinkedIn: 
-                <a href="https://www.linkedin.com/in/nikhil-nainan-771511309/" target="_blank" rel="noopener noreferrer">
-                    Nikhil's LinkedIn Profile
-                </a>
-            </p>         
-        </div>          
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
 
-        <!-- Career Objectives Section -->         
-        <div class="section">             
-            <h2 class="section-title">Career Objectives</h2>             
-            <div class="content">                 
-                <p>To leverage my skills in computer science and engineering in a challenging role where I can contribute to impactful projects and grow as a developer.</p>                 
-                <p>To work in a dynamic environment that encourages continuous learning and enhances my technical and professional skills.</p>                 
-                <p>To apply my knowledge in software development to solve real-world problems and drive innovation in technology.</p>             
-            </div>         
-        </div> 
+        /* Container styling */
+        .container {
+            width: 60%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-        <!-- Education Section -->         
-        <div class="section">             
-            <h2 class="section-title">Education</h2>             
-            <div class="content">                 
-                <h3>Bachelor of Engineering - Computer Science and Engineering</h3>                 
+        /* Header styling */
+        .header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        /* Profile photo styling */
+        .profile-photo {
+            width: 120px;
+            height: 120px; /* Square format */
+            margin-left: 20px;
+        }
+
+        /* Section styling */
+        h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #333;
+        }
+
+        .header .contact-info {
+            text-align: left;
+        }
+
+        .header p {
+            margin: 5px 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #007bff;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .content h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .content p {
+            margin: 0;
+            color: #555;
+        }
+
+        .content ul {
+            padding-left: 20px;
+            color: #555;
+        }
+
+        .content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Technical skills section formatting */
+        .technical-skills {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        /* Flex container for the technical skills and profile */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section with Profile Photo -->
+        <div class="header">
+            <div class="contact-info">
+                <h1>Nikhil T Nainan</h1>
+                <p>Villa No. 2, Carbon Park Lane Villa, Sy.No. 64, KRC Road, Off Doddagubi Main Road, Kyalasanahalli, Bangalore - 560 077</p>
+                <p>9620265432 | Email: nikhilnainan16@gmail.com | LinkedIn: 
+                    <a href="https://www.linkedin.com/in/nikhil-nainan-771511309/" target="_blank" rel="noopener noreferrer">
+                        Nikhil's LinkedIn Profile
+                    </a>
+                </p>
+            </div>
+            <img src="Nikhil -Photo.jpg" alt="Nikhil's Photo" class="profile-photo">
+        </div>
+
+        <!-- Career Objectives Section -->
+        <div class="section">
+            <h2 class="section-title">Career Objectives</h2>
+            <div class="content">
+                <p>To leverage my skills in computer science and engineering in a challenging role where I can contribute to impactful projects and grow as a developer.</p>
+                <p>To work in a dynamic environment that encourages continuous learning and enhances my technical and professional skills.</p>
+                <p>To apply my knowledge in software development to solve real-world problems and drive innovation in technology.</p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="content">
+                <h3>Bachelor of Engineering - Computer Science and Engineering</h3>
                 <p>CMR Institute of Technology | CGPA: 8.1 | Graduation Year: 2026 | Pursuing</p>
-                
-                <h3>12th Grade - Science</h3>                 
-                <p>CMR National PU College | Percentage: 90.5% | Graduation Year: 2022</p>  
 
-                <h3>10th Grade</h3>                 
-                <p>St Joseph's Boys High School | Percentage: 89.04%</p>             
-            </div>         
-        </div>          
-        
-        <!-- Skills Section -->         
-        <div class="section">             
-            <h2 class="section-title">Technical Skills</h2>             
-            <div class="content">                 
-                <ul>                     
-                    <li><strong>Programming Languages:</strong> Python, C, Java</li>                     
-                    <li><strong>Software:</strong> Ubuntu, Windows</li>                     
-                    <li><strong>Database:</strong> MySQL</li>                     
-                    <li><strong>Web Technology:</strong> HTML, CSS</li>                
-                </ul>             
-            </div>         
-        </div>          
+                <h3>12th Grade - Science</h3>
+                <p>CMR National PU College | Percentage: 90.5% | Graduation Year: 2022</p>
 
-        <!-- Experience Section -->         
-        <div class="section">             
-            <h2 class="section-title">Experience</h2>             
-            <div class="content">                 
-                <h3>Job Title | Company Name</h3>                 
-                <p>Location | Start Date - End Date</p>                 
-                <ul>                     
-                    <li>Describe your key responsibilities and achievements.</li>                     
-                    <li>Include relevant projects, technologies, or skills used.</li>                 
-                </ul>             
-            </div>             
-            <!-- Repeat content div for more experiences -->         
-        </div>          
-        
-        <!-- Certifications Section -->         
-        <div class="section">             
-            <h2 class="section-title">Online Courses and Certifications</h2>             
-            <div class="content">                 
+                <h3>10th Grade</h3>
+                <p>St Joseph's Boys High School | Percentage: 89.04%</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="content flex-container">
+                <div class="technical-skills">
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Python, C, Java</li>
+                        <li><strong>Software:</strong> Ubuntu, Windows</li>
+                        <li><strong>Database:</strong> MySQL</li>
+                        <li><strong>Web Technology:</strong> HTML, CSS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section">
+            <h2 class="section-title">Online Courses and Certifications</h2>
+            <div class="content">
                 <p>
                     <a href="https://www.udemy.com/certificate/UC-3749d83c-d360-4a3e-ad63-6702b136ebda/" target="_blank" rel="noopener noreferrer">
                         Complete Python Bootcamp - Udemy Certificate
                     </a>
-                </p>                 
+                </p>
                 <p>
                     <a href="https://www.udemy.com/certificate/UC-b3cb7f0d-f849-45a3-b40e-4d529d778358/" target="_blank" rel="noopener noreferrer">
                         Data Science and Machine Learning - Udemy Certificate
                     </a>
-                </p>             
-            </div>         
-        </div>          
-        
-        <!-- Projects Section -->         
-        <div class="section">             
-            <h2 class="section-title">Projects</h2>             
-            <div class="content">                 
-                <h3>Fashion Recommendation Engine</h3>                 
-                <p>A machine learning project that provides personalized fashion recommendations to users. The project uses a Kaggle dataset for training and was developed in PyCharm.</p>   
+                </p>
+            </div>
+        </div>
 
-                <h3>Library Management System</h3>                 
-                <p>An interactive system developed using MySQL, where users can have different roles, such as librarian or reader, allowing tailored access and managing transactions within the library.</p>             
-            </div>         
-        </div>     
+        <!-- Projects Section -->
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="content">
+                <h3><a href="https://github.com/nikhilnainan16/bookmaadi" target="_blank" rel="noopener noreferrer">BookMadi</a></h3>
+                <p>A website where you can book and host events, allowing users to register and participate in various events.</p>
 
-        <!-- Co-Curricular and Extra-Curricular Activities Section -->         
-        <div class="section">             
-            <h2 class="section-title">Co-Curricular and Extra-Curricular Activities</h2>             
-            <div class="content">                 
-                <p>Member of Developer Student Club</p>                 
-                <p>Active participant in Peer Tutoring and Mentoring Program</p>             
-            </div>         
-        </div>     
+                <h3><a href="https://github.com/nikhilnainan16/LibraryManagemantSystem" target="_blank" rel="noopener noreferrer">Library Management System</a></h3>
+                <p>An interactive system developed using MySQL, where users can have different roles, such as librarian or reader, allowing tailored access and managing transactions within the library.</p>
+            </div>
+        </div>
 
-        <!-- Personal Details Section -->         
-        <div class="section">             
-            <h2 class="section-title">Personal Details</h2>             
-            <div class="content">                 
-                <p><strong>Date of Birth:</strong> 16th June 2004</p>                 
-                <p><strong>Gender:</strong> Male</p>                 
-                <p><strong>Nationality:</strong> Indian</p>                 
-                <p><strong>Linguistic Competency:</strong> English (Full working proficiency), French (Limited working proficiency)</p>                 
-                <p><strong>Hobbies:</strong> Playing badminton and football</p>             
-            </div>         
-        </div>     
-    </div> 
-</body> 
+        <!-- Co-Curricular and Extra-Curricular Activities Section -->
+        <div class="section">
+            <h2 class="section-title">Co-Curricular and Extra-Curricular Activities</h2>
+            <div class="content">
+                <p>Member of Developer Student Club</p>
+                <p>Active participant in Peer Tutoring and Mentoring Program</p>
+            </div>
+        </div>
+
+        <!-- Personal Details Section -->
+        <div class="section">
+            <h2 class="section-title">Personal Details</h2>
+            <div class="content">
+                <p><strong>Date of Birth:</strong> 16th June 2004</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Nationality:</strong> Indian</p>
+                <p><strong>Linguistic Competency:</strong> English (Full working proficiency), French (Limited working proficiency)</p>
+                <p><strong>Hobbies:</strong> Playing badminton and football</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
